@@ -1,0 +1,13 @@
+apply plugin: 'java'
+apply plugin: 'application'
+
+repositories {
+    mavenLocal()
+}
+
+dependencies {
+    compile 'hoge:xxxxx:0.0.1'
+}
+
+mainClassName = 'App'
+

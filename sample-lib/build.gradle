@@ -1,0 +1,20 @@
+apply plugin: 'java-library'
+apply plugin: 'maven'
+
+group = "hoge"
+archivesBaseName = 'xxxxx'
+version = "0.0.1"
+
+repositories {
+}
+
+dependencies {
+}
+
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            repository(url: "file:${System.getProperty('user.home')}/.m2/repository")
+        }
+    }
+}
